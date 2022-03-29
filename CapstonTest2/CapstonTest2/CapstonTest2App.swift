@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct CapstonTest2App: App {
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
+
         }
     }
 }
