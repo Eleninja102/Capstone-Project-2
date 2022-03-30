@@ -20,14 +20,17 @@ struct ContentView: View {
             CategoryHome()
                 .tabItem{
                     Label("Featured", systemImage: "star")
+                        
                 }
                 .tag(Tab.featured)
+                
 
             LandmarkList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }
                 .tag(Tab.list)
+                
         }
     }
 }

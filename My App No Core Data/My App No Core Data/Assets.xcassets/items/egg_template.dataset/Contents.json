@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "egg_template.pdn",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

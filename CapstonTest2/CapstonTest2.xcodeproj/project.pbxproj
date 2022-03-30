@@ -12,6 +12,8 @@
 		1D735FFF27F2AB510032E670 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D735FFE27F2AB510032E670 /* FeatureCard.swift */; };
 		1D73600127F2ABD90032E670 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73600027F2ABD90032E670 /* PageView.swift */; };
 		1D73600327F2B2E50032E670 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73600227F2B2E50032E670 /* PageControl.swift */; };
+		1D73601E27F2B8920032E670 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D73601D27F2B8920032E670 /* MapKit.framework */; };
+		1D73602027F2B98B0032E670 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D73601F27F2B98B0032E670 /* CoreLocation.framework */; };
 		1DE6665927F0DE5500B97A04 /* CapstonTest2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE6665827F0DE5500B97A04 /* CapstonTest2App.swift */; };
 		1DE6665B27F0DE5500B97A04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE6665A27F0DE5500B97A04 /* ContentView.swift */; };
 		1DE6665D27F0DE5800B97A04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE6665C27F0DE5800B97A04 /* Assets.xcassets */; };
@@ -71,6 +73,9 @@
 		1D735FFE27F2AB510032E670 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		1D73600027F2ABD90032E670 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		1D73600227F2B2E50032E670 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		1D73601B27F2B8910032E670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1D73601D27F2B8920032E670 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1D73601F27F2B98B0032E670 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1DE6665527F0DE5500B97A04 /* CapstonTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstonTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE6665827F0DE5500B97A04 /* CapstonTest2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstonTest2App.swift; sourceTree = "<group>"; };
 		1DE6665A27F0DE5500B97A04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D73602027F2B98B0032E670 /* CoreLocation.framework in Frameworks */,
+				1D73601E27F2B8920032E670 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,15 @@
 			path = PageView;
 			sourceTree = "<group>";
 		};
+		1D73601C27F2B8920032E670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D73601F27F2B98B0032E670 /* CoreLocation.framework */,
+				1D73601D27F2B8920032E670 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1DE6664C27F0DE5500B97A04 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +169,7 @@
 				1DE6666827F0DE5800B97A04 /* CapstonTest2Tests */,
 				1DE6667227F0DE5800B97A04 /* CapstonTest2UITests */,
 				1DE6665627F0DE5500B97A04 /* Products */,
+				1D73601C27F2B8920032E670 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +186,7 @@
 		1DE6665727F0DE5500B97A04 /* CapstonTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				1D73601B27F2B8910032E670 /* Info.plist */,
 				1DE6665827F0DE5500B97A04 /* CapstonTest2App.swift */,
 				1DE6668C27F2715400B97A04 /* Views */,
 				1DE6665C27F0DE5800B97A04 /* Assets.xcassets */,
@@ -628,6 +646,7 @@
 				DEVELOPMENT_TEAM = YQZJF26P66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapstonTest2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -657,6 +676,7 @@
 				DEVELOPMENT_TEAM = YQZJF26P66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapstonTest2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
