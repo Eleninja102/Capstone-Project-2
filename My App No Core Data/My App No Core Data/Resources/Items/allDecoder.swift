@@ -1,5 +1,5 @@
 //
-//  ItemDecoder.swift
+//  allDecoder.swift
 //  My App No Core Data
 //
 //  Created by Coleton Watt on 3/29/22.
@@ -9,12 +9,13 @@ import Foundation
 import Combine
 
 //var itemDecode: [Item] = load("items")
+func sorterByideM(this:Item, that:Item) -> Bool {
+    return getImage(imageName: this.type.desc.ideM) < getImage(imageName: that.type.desc.ideM)
+}
 
-final class ItemDecoder: ObservableObject{
-    @Published var itemDecoded : [Item] = load2()
+final class allDecoder: ObservableObject{
+    @Published var itemDecoded : [Item] = load2().sorted(by: sorterByideM)
     
-    
-
     
 }
 
@@ -22,12 +23,12 @@ final class ItemDecoder: ObservableObject{
 func load2() -> [Item]{
     var data: [Item] = []
     var items: [URL];
-        items =  Bundle.main.urls(forResourcesWithExtension: ".json", subdirectory: nil)!
-    
-        for file in items{
-            
-                 data.append(load(file));
-        }
+
+    items =  Bundle.main.urls(forResourcesWithExtension: ".json", subdirectory: "TestJson")!
+
+    for file in items{
+        data.append(load(file));
+    }
    
     return data;
 }

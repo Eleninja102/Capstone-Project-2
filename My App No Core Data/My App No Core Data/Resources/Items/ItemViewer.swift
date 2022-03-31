@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ItemViewer: View {
-    @EnvironmentObject var itemDecoder: ItemDecoder
+    @EnvironmentObject var itemDecoder: allDecoder
 
     var itemDetail: Item
     var body: some View {
@@ -22,7 +22,7 @@ struct ItemViewer: View {
 }
 
 struct ItemViewer_Previews: PreviewProvider {
-    static let itemDecoder = ItemDecoder()
+    static let itemDecoder = allDecoder()
 
     static var previews: some View {
         Group{

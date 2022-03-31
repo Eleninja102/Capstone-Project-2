@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct My_App_No_Core_DataApp: App {
-    @StateObject private var itemDecoder = ItemDecoder()
+    @StateObject private var itemDecoder = allDecoder()
 
     var body: some Scene {
         WindowGroup {

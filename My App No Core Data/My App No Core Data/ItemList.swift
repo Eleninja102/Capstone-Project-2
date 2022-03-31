@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ItemList: View {
-    @EnvironmentObject var itemDecoder: ItemDecoder
+    @EnvironmentObject var itemDecoder: allDecoder
    
 
 
@@ -29,6 +29,6 @@ struct ItemList_Previews: PreviewProvider {
     
     static var previews: some View {
         ItemList()
-            .environmentObject(ItemDecoder())
+            .environmentObject(allDecoder())
     }
 }

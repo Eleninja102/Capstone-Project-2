@@ -34,7 +34,7 @@ struct ItemRow: View {
 }
 
 struct ItemRow_Previews: PreviewProvider {
-    static var itemDecoder = ItemDecoder().itemDecoded[1]
+    static var itemDecoder = allDecoder().itemDecoded[1]
 
     static var previews: some View {
         Group{

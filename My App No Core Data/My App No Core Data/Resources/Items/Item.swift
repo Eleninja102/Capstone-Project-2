@@ -30,6 +30,7 @@ struct Types: Codable {
 }
 struct descripitions: Codable{
     var ideM: String
+    
     private enum CodingKeys: String, CodingKey {
         case ideM = "identifier"
     }
@@ -57,5 +58,7 @@ struct Food: Codable{
 }
 
 //golden_apple and enchanted apple don't work idk why
+
+
 
 
