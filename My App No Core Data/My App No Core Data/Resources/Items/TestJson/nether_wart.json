@@ -7,7 +7,7 @@
 
     "components": {
       "minecraft:seed": {
-        "plant_at": "soul_sand",
+        "plant_at": ["soul_sand"],
         "crop_result": "nether_wart"
       }
     }

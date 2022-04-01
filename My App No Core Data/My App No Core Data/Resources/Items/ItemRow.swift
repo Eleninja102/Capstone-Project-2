@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ItemRow: View {
 
-    var itemDetail: Item
+    var itemDetail: behaviorDetails
    
 
     var body: some View {
-        let itemDetail2 = itemDetail.type.desc
+        let itemDetail2 = itemDetail.item!.desc
         let name = itemDetail2.ideM
         let x = getImage(imageName: name)
 

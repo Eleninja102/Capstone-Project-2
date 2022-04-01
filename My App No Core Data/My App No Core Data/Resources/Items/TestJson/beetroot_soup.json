@@ -11,7 +11,7 @@
       "minecraft:food": {
         "nutrition": 6,
         "saturation_modifier": "normal",
-        "using_converts_to": "bowl"
+        "   ": "bowl"
       }
     }
   }

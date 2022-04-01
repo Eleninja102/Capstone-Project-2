@@ -11,11 +11,11 @@ import SwiftUI
 struct ItemViewer: View {
     @EnvironmentObject var itemDecoder: allDecoder
 
-    var itemDetail: Item
+    var itemDetail: behaviorDetails
     var body: some View {
         HStack{
             Text(itemDetail.version)
-            Text(itemDetail.type.desc.ideM)
+            Text(itemDetail.item!.desc.ideM)
         }
 
     }

@@ -16,7 +16,7 @@ struct ItemList: View {
     var body: some View {
         let A = itemDecoder.itemDecoded;
         List{
-            ForEach(A,  id: \.type.desc.ideM){ item in
+            ForEach(A,  id: \.item!.desc.ideM){ item in
                 ItemRow(itemDetail: item)
             }
                 
