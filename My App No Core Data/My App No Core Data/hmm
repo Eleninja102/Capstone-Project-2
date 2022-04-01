@@ -1,0 +1,1543 @@
+diff --git a/CapstonTest2/CapstonTest2/Landmark.swift b/CapstonTest2/CapstonTest2/Landmark.swift
+new file mode 100644
+index 0000000..0fdee8c
+--- /dev/null
++++ b/CapstonTest2/CapstonTest2/Landmark.swift
+@@ -0,0 +1,8 @@
++//
++//  Landmark.swift
++//  CapstonTest2
++//
++//  Created by Coleton Watt on 3/28/22.
++//
++
++import Foundation
+diff --git a/CapstonTest2/CapstonTest2/Views/LandmarkDetail.swift b/CapstonTest2/CapstonTest2/Views/LandmarkDetail.swift
+new file mode 100644
+index 0000000..6f7a340
+--- /dev/null
++++ b/CapstonTest2/CapstonTest2/Views/LandmarkDetail.swift
+@@ -0,0 +1,20 @@
++//
++//  LandmarkDetail.swift
++//  CapstonTest2
++//
++//  Created by Coleton Watt on 3/28/22.
++//
++
++import SwiftUI
++
++struct LandmarkDetail: View {
++    var body: some View {
++        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
++    }
++}
++
++struct LandmarkDetail_Previews: PreviewProvider {
++    static var previews: some View {
++        LandmarkDetail()
++    }
++}
+diff --git a/My App No Core Data/My App No Core Data.xcodeproj/project.pbxproj b/My App No Core Data/My App No Core Data.xcodeproj/project.pbxproj
+index 4b20bea..a3e0624 100644
+--- a/My App No Core Data/My App No Core Data.xcodeproj/project.pbxproj	
++++ b/My App No Core Data/My App No Core Data.xcodeproj/project.pbxproj	
+@@ -14,56 +14,15 @@
+ 		1D73607A27F36B110032E670 /* My_App_No_Core_DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73607927F36B110032E670 /* My_App_No_Core_DataTests.swift */; };
+ 		1D73608427F36B110032E670 /* My_App_No_Core_DataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73608327F36B110032E670 /* My_App_No_Core_DataUITests.swift */; };
+ 		1D73608627F36B110032E670 /* My_App_No_Core_DataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73608527F36B110032E670 /* My_App_No_Core_DataUITestsLaunchTests.swift */; };
+-		1D7360F627F36CAC0032E670 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7360F527F36CAC0032E670 /* Item.swift */; };
+-		1D73618827F380F70032E670 /* cooked_porkchop.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615927F380F70032E670 /* cooked_porkchop.json */; };
+-		1D73618927F380F70032E670 /* porkchop.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615A27F380F70032E670 /* porkchop.json */; };
+-		1D73618A27F380F70032E670 /* honey_bottle.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615B27F380F70032E670 /* honey_bottle.json */; };
+-		1D73618B27F380F70032E670 /* golden_carrot.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615C27F380F70032E670 /* golden_carrot.json */; };
+-		1D73618C27F380F70032E670 /* nether_wart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615D27F380F70032E670 /* nether_wart.json */; };
+-		1D73618D27F380F70032E670 /* cooked_chicken.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615E27F380F70032E670 /* cooked_chicken.json */; };
+-		1D73618E27F380F70032E670 /* apple.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615F27F380F70032E670 /* apple.json */; };
+-		1D73618F27F380F70032E670 /* baked_potato.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616027F380F70032E670 /* baked_potato.json */; };
+-		1D73619127F380F70032E670 /* camera.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616227F380F70032E670 /* camera.json */; };
+-		1D73619227F380F70032E670 /* beetroot_seeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616327F380F70032E670 /* beetroot_seeds.json */; };
+-		1D73619327F380F70032E670 /* mushroom_stew.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616427F380F70032E670 /* mushroom_stew.json */; };
+-		1D73619427F380F70032E670 /* cookie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616527F380F70032E670 /* cookie.json */; };
+-		1D73619527F380F70032E670 /* sweet_berries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616627F380F70032E670 /* sweet_berries.json */; };
+-		1D73619627F380F70032E670 /* melon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616727F380F70032E670 /* melon.json */; };
+-		1D73619727F380F70032E670 /* cooked_salmon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616827F380F70032E670 /* cooked_salmon.json */; };
+-		1D73619827F380F70032E670 /* cooked_fish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616927F380F70032E670 /* cooked_fish.json */; };
+-		1D73619927F380F80032E670 /* muttonRaw.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616A27F380F70032E670 /* muttonRaw.json */; };
+-		1D73619A27F380F80032E670 /* beetroot_soup.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616B27F380F70032E670 /* beetroot_soup.json */; };
+-		1D73619B27F380F80032E670 /* chicken.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616C27F380F70032E670 /* chicken.json */; };
+-		1D73619C27F380F80032E670 /* pumpkin_seeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616D27F380F70032E670 /* pumpkin_seeds.json */; };
+-		1D73619D27F380F80032E670 /* dried_kelp.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616E27F380F70032E670 /* dried_kelp.json */; };
+-		1D73619E27F380F80032E670 /* fish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73616F27F380F70032E670 /* fish.json */; };
+-		1D73619F27F380F80032E670 /* glow_berries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617027F380F70032E670 /* glow_berries.json */; };
+-		1D7361A027F380F80032E670 /* salmon.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617127F380F70032E670 /* salmon.json */; };
+-		1D7361A127F380F80032E670 /* poisonous_potato.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617227F380F70032E670 /* poisonous_potato.json */; };
+-		1D7361A227F380F80032E670 /* clownfish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617327F380F70032E670 /* clownfish.json */; };
+-		1D7361A327F380F80032E670 /* chorus_fruit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617427F380F70032E670 /* chorus_fruit.json */; };
+-		1D7361A427F380F80032E670 /* cooked_beef.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617527F380F70032E670 /* cooked_beef.json */; };
+-		1D7361A527F380F80032E670 /* honeycomb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617627F380F70032E670 /* honeycomb.json */; };
+-		1D7361A627F380F80032E670 /* pumpkin_pie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617727F380F70032E670 /* pumpkin_pie.json */; };
+-		1D7361A727F380F80032E670 /* spider_eye.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617827F380F70032E670 /* spider_eye.json */; };
+-		1D7361A827F380F80032E670 /* cooked_rabbit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617927F380F70032E670 /* cooked_rabbit.json */; };
+-		1D7361A927F380F80032E670 /* melon_seeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617A27F380F70032E670 /* melon_seeds.json */; };
+-		1D7361AA27F380F80032E670 /* muttonCooked.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617B27F380F70032E670 /* muttonCooked.json */; };
+-		1D7361AB27F380F80032E670 /* potato.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617C27F380F70032E670 /* potato.json */; };
+-		1D7361AC27F380F80032E670 /* pufferfish.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617D27F380F70032E670 /* pufferfish.json */; };
+-		1D7361AD27F380F80032E670 /* bread.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617E27F380F70032E670 /* bread.json */; };
+-		1D7361AE27F380F80032E670 /* beetroot.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73617F27F380F70032E670 /* beetroot.json */; };
+-		1D7361B027F380F80032E670 /* suspicious_stew.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618127F380F70032E670 /* suspicious_stew.json */; };
+-		1D7361B127F380F80032E670 /* carrot.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618227F380F70032E670 /* carrot.json */; };
+-		1D7361B227F380F80032E670 /* rotten_flesh.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618327F380F70032E670 /* rotten_flesh.json */; };
+-		1D7361B327F380F80032E670 /* wheat_seeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618427F380F70032E670 /* wheat_seeds.json */; };
+-		1D7361B427F380F80032E670 /* beef.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618527F380F70032E670 /* beef.json */; };
+-		1D7361B527F380F80032E670 /* rabbit.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618627F380F70032E670 /* rabbit.json */; };
+-		1D7361B627F380F80032E670 /* rabbit_stew.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73618727F380F70032E670 /* rabbit_stew.json */; };
+-		1D73620B27F38FB30032E670 /* ItemDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7360F327F36C650032E670 /* ItemDecoder.swift */; };
++		1D7360F627F36CAC0032E670 /* behaviorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7360F527F36CAC0032E670 /* behaviorDetails.swift */; };
++		1D73618927F380F70032E670 /* TestJson in Resources */ = {isa = PBXBuildFile; fileRef = 1D73615A27F380F70032E670 /* TestJson */; };
++		1D73620B27F38FB30032E670 /* allDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7360F327F36C650032E670 /* allDecoder.swift */; };
+ 		1D73623E27F395A60032E670 /* ItemViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73623D27F395A60032E670 /* ItemViewer.swift */; };
+ 		1D73624727F3C68F0032E670 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73624627F3C68F0032E670 /* ItemRow.swift */; };
+ 		1D73624927F3CFE90032E670 /* getImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73624827F3CFE80032E670 /* getImage.swift */; };
++		1DC1129E27F6068500B0E64B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1129D27F6068500B0E64B /* Entities.swift */; };
++		1DE4F86C27F5F1C400F28212 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE4F86B27F5F1C400F28212 /* DataItem.swift */; };
++		1DE4F86F27F5FD9100F28212 /* entities in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4F86E27F5FD9100F28212 /* entities */; };
+ 		1DEA204327F3EB2400947EB9 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA204227F3EB2400947EB9 /* ItemList.swift */; };
+ /* End PBXBuildFile section */
+ 
+@@ -95,56 +54,15 @@
+ 		1D73607F27F36B110032E670 /* My App No Core DataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My App No Core DataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+ 		1D73608327F36B110032E670 /* My_App_No_Core_DataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_App_No_Core_DataUITests.swift; sourceTree = "<group>"; };
+ 		1D73608527F36B110032E670 /* My_App_No_Core_DataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_App_No_Core_DataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+-		1D7360F327F36C650032E670 /* ItemDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDecoder.swift; sourceTree = "<group>"; };
+-		1D7360F527F36CAC0032E670 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+-		1D73615927F380F70032E670 /* cooked_porkchop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cooked_porkchop.json; sourceTree = "<group>"; };
+-		1D73615A27F380F70032E670 /* porkchop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = porkchop.json; sourceTree = "<group>"; };
+-		1D73615B27F380F70032E670 /* honey_bottle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = honey_bottle.json; sourceTree = "<group>"; };
+-		1D73615C27F380F70032E670 /* golden_carrot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = golden_carrot.json; sourceTree = "<group>"; };
+-		1D73615D27F380F70032E670 /* nether_wart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nether_wart.json; sourceTree = "<group>"; };
+-		1D73615E27F380F70032E670 /* cooked_chicken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cooked_chicken.json; sourceTree = "<group>"; };
+-		1D73615F27F380F70032E670 /* apple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apple.json; sourceTree = "<group>"; };
+-		1D73616027F380F70032E670 /* baked_potato.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baked_potato.json; sourceTree = "<group>"; };
+-		1D73616227F380F70032E670 /* camera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = camera.json; sourceTree = "<group>"; };
+-		1D73616327F380F70032E670 /* beetroot_seeds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beetroot_seeds.json; sourceTree = "<group>"; };
+-		1D73616427F380F70032E670 /* mushroom_stew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mushroom_stew.json; sourceTree = "<group>"; };
+-		1D73616527F380F70032E670 /* cookie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cookie.json; sourceTree = "<group>"; };
+-		1D73616627F380F70032E670 /* sweet_berries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sweet_berries.json; sourceTree = "<group>"; };
+-		1D73616727F380F70032E670 /* melon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = melon.json; sourceTree = "<group>"; };
+-		1D73616827F380F70032E670 /* cooked_salmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cooked_salmon.json; sourceTree = "<group>"; };
+-		1D73616927F380F70032E670 /* cooked_fish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cooked_fish.json; sourceTree = "<group>"; };
+-		1D73616A27F380F70032E670 /* muttonRaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = muttonRaw.json; sourceTree = "<group>"; };
+-		1D73616B27F380F70032E670 /* beetroot_soup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beetroot_soup.json; sourceTree = "<group>"; };
+-		1D73616C27F380F70032E670 /* chicken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chicken.json; sourceTree = "<group>"; };
+-		1D73616D27F380F70032E670 /* pumpkin_seeds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkin_seeds.json; sourceTree = "<group>"; };
+-		1D73616E27F380F70032E670 /* dried_kelp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dried_kelp.json; sourceTree = "<group>"; };
+-		1D73616F27F380F70032E670 /* fish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fish.json; sourceTree = "<group>"; };
+-		1D73617027F380F70032E670 /* glow_berries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = glow_berries.json; sourceTree = "<group>"; };
+-		1D73617127F380F70032E670 /* salmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = salmon.json; sourceTree = "<group>"; };
+-		1D73617227F380F70032E670 /* poisonous_potato.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = poisonous_potato.json; sourceTree = "<group>"; };
+-		1D73617327F380F70032E670 /* clownfish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clownfish.json; sourceTree = "<group>"; };
+-		1D73617427F380F70032E670 /* chorus_fruit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chorus_fruit.json; sourceTree = "<group>"; };
+-		1D73617527F380F70032E670 /* cooked_beef.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cooked_beef.json; sourceTree = "<group>"; };
+-		1D73617627F380F70032E670 /* honeycomb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = honeycomb.json; sourceTree = "<group>"; };
+-		1D73617727F380F70032E670 /* pumpkin_pie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkin_pie.json; sourceTree = "<group>"; };
+-		1D73617827F380F70032E670 /* spider_eye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spider_eye.json; sourceTree = "<group>"; };
+-		1D73617927F380F70032E670 /* cooked_rabbit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cooked_rabbit.json; sourceTree = "<group>"; };
+-		1D73617A27F380F70032E670 /* melon_seeds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = melon_seeds.json; sourceTree = "<group>"; };
+-		1D73617B27F380F70032E670 /* muttonCooked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = muttonCooked.json; sourceTree = "<group>"; };
+-		1D73617C27F380F70032E670 /* potato.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = potato.json; sourceTree = "<group>"; };
+-		1D73617D27F380F70032E670 /* pufferfish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pufferfish.json; sourceTree = "<group>"; };
+-		1D73617E27F380F70032E670 /* bread.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bread.json; sourceTree = "<group>"; };
+-		1D73617F27F380F70032E670 /* beetroot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beetroot.json; sourceTree = "<group>"; };
+-		1D73618127F380F70032E670 /* suspicious_stew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = suspicious_stew.json; sourceTree = "<group>"; };
+-		1D73618227F380F70032E670 /* carrot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carrot.json; sourceTree = "<group>"; };
+-		1D73618327F380F70032E670 /* rotten_flesh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rotten_flesh.json; sourceTree = "<group>"; };
+-		1D73618427F380F70032E670 /* wheat_seeds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wheat_seeds.json; sourceTree = "<group>"; };
+-		1D73618527F380F70032E670 /* beef.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beef.json; sourceTree = "<group>"; };
+-		1D73618627F380F70032E670 /* rabbit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rabbit.json; sourceTree = "<group>"; };
+-		1D73618727F380F70032E670 /* rabbit_stew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rabbit_stew.json; sourceTree = "<group>"; };
++		1D7360F327F36C650032E670 /* allDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allDecoder.swift; sourceTree = "<group>"; };
++		1D7360F527F36CAC0032E670 /* behaviorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = behaviorDetails.swift; sourceTree = "<group>"; };
++		1D73615A27F380F70032E670 /* TestJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = TestJson; sourceTree = "<group>"; };
+ 		1D73623D27F395A60032E670 /* ItemViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewer.swift; sourceTree = "<group>"; };
+ 		1D73624627F3C68F0032E670 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+ 		1D73624827F3CFE80032E670 /* getImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getImage.swift; sourceTree = "<group>"; };
++		1DC1129D27F6068500B0E64B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
++		1DE4F86B27F5F1C400F28212 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
++		1DE4F86E27F5FD9100F28212 /* entities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = entities; sourceTree = "<group>"; };
+ 		1DEA204227F3EB2400947EB9 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+ /* End PBXFileReference section */
+ 
+@@ -234,13 +152,10 @@
+ 		1D73609227F36C000032E670 /* Items */ = {
+ 			isa = PBXGroup;
+ 			children = (
+-				1D7360F327F36C650032E670 /* ItemDecoder.swift */,
+-				1D7360F527F36CAC0032E670 /* Item.swift */,
++				1DE4F86B27F5F1C400F28212 /* DataItem.swift */,
+ 				1D73623D27F395A60032E670 /* ItemViewer.swift */,
+ 				1D73624627F3C68F0032E670 /* ItemRow.swift */,
+-				1D73624827F3CFE80032E670 /* getImage.swift */,
+-				1D73624127F3A1520032E670 /* TestJson */,
+-				1D73615827F380F70032E670 /* items */,
++				1D73615A27F380F70032E670 /* TestJson */,
+ 			);
+ 			path = Items;
+ 			sourceTree = "<group>";
+@@ -248,71 +163,16 @@
+ 		1D73609327F36C070032E670 /* Resources */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				1D73624827F3CFE80032E670 /* getImage.swift */,
++				1DC1129D27F6068500B0E64B /* Entities.swift */,
++				1D7360F327F36C650032E670 /* allDecoder.swift */,
++				1D7360F527F36CAC0032E670 /* behaviorDetails.swift */,
++				1DE4F86E27F5FD9100F28212 /* entities */,
+ 				1D73609227F36C000032E670 /* Items */,
+ 			);
+ 			path = Resources;
+ 			sourceTree = "<group>";
+ 		};
+-		1D73615827F380F70032E670 /* items */ = {
+-			isa = PBXGroup;
+-			children = (
+-			);
+-			path = items;
+-			sourceTree = "<group>";
+-		};
+-		1D73624127F3A1520032E670 /* TestJson */ = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73615927F380F70032E670 /* cooked_porkchop.json */,
+-				1D73615A27F380F70032E670 /* porkchop.json */,
+-				1D73615D27F380F70032E670 /* nether_wart.json */,
+-				1D73615F27F380F70032E670 /* apple.json */,
+-				1D73615B27F380F70032E670 /* honey_bottle.json */,
+-				1D73615C27F380F70032E670 /* golden_carrot.json */,
+-				1D73615E27F380F70032E670 /* cooked_chicken.json */,
+-				1D73616027F380F70032E670 /* baked_potato.json */,
+-				1D73616227F380F70032E670 /* camera.json */,
+-				1D73616327F380F70032E670 /* beetroot_seeds.json */,
+-				1D73616427F380F70032E670 /* mushroom_stew.json */,
+-				1D73616527F380F70032E670 /* cookie.json */,
+-				1D73616627F380F70032E670 /* sweet_berries.json */,
+-				1D73616727F380F70032E670 /* melon.json */,
+-				1D73616A27F380F70032E670 /* muttonRaw.json */,
+-				1D73616B27F380F70032E670 /* beetroot_soup.json */,
+-				1D73616C27F380F70032E670 /* chicken.json */,
+-				1D73616D27F380F70032E670 /* pumpkin_seeds.json */,
+-				1D73616827F380F70032E670 /* cooked_salmon.json */,
+-				1D73616927F380F70032E670 /* cooked_fish.json */,
+-				1D73616E27F380F70032E670 /* dried_kelp.json */,
+-				1D73616F27F380F70032E670 /* fish.json */,
+-				1D73617027F380F70032E670 /* glow_berries.json */,
+-				1D73617127F380F70032E670 /* salmon.json */,
+-				1D73617427F380F70032E670 /* chorus_fruit.json */,
+-				1D73617527F380F70032E670 /* cooked_beef.json */,
+-				1D73617627F380F70032E670 /* honeycomb.json */,
+-				1D73617727F380F70032E670 /* pumpkin_pie.json */,
+-				1D73617827F380F70032E670 /* spider_eye.json */,
+-				1D73617A27F380F70032E670 /* melon_seeds.json */,
+-				1D73617B27F380F70032E670 /* muttonCooked.json */,
+-				1D73617C27F380F70032E670 /* potato.json */,
+-				1D73617E27F380F70032E670 /* bread.json */,
+-				1D73617F27F380F70032E670 /* beetroot.json */,
+-				1D73618127F380F70032E670 /* suspicious_stew.json */,
+-				1D73618227F380F70032E670 /* carrot.json */,
+-				1D73618327F380F70032E670 /* rotten_flesh.json */,
+-				1D73618527F380F70032E670 /* beef.json */,
+-				1D73618627F380F70032E670 /* rabbit.json */,
+-				1D73618727F380F70032E670 /* rabbit_stew.json */,
+-				1D73617927F380F70032E670 /* cooked_rabbit.json */,
+-				1D73617227F380F70032E670 /* poisonous_potato.json */,
+-				1D73617327F380F70032E670 /* clownfish.json */,
+-				1D73617D27F380F70032E670 /* pufferfish.json */,
+-				1D73618427F380F70032E670 /* wheat_seeds.json */,
+-			);
+-			name = TestJson;
+-			path = "My App No Core Data/Resources/Items/TestJson";
+-			sourceTree = SOURCE_ROOT;
+-		};
+ /* End PBXGroup section */
+ 
+ /* Begin PBXNativeTarget section */
+@@ -417,53 +277,10 @@
+ 			isa = PBXResourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
+-				1D73618F27F380F70032E670 /* baked_potato.json in Resources */,
+-				1D73618A27F380F70032E670 /* honey_bottle.json in Resources */,
+-				1D7361B327F380F80032E670 /* wheat_seeds.json in Resources */,
+-				1D7361B227F380F80032E670 /* rotten_flesh.json in Resources */,
+ 				1D73607027F36B110032E670 /* Preview Assets.xcassets in Resources */,
+-				1D73618827F380F70032E670 /* cooked_porkchop.json in Resources */,
+-				1D7361B427F380F80032E670 /* beef.json in Resources */,
+-				1D73619727F380F70032E670 /* cooked_salmon.json in Resources */,
+-				1D73619F27F380F80032E670 /* glow_berries.json in Resources */,
+-				1D7361A127F380F80032E670 /* poisonous_potato.json in Resources */,
+-				1D7361A627F380F80032E670 /* pumpkin_pie.json in Resources */,
+-				1D73619227F380F70032E670 /* beetroot_seeds.json in Resources */,
+-				1D73619127F380F70032E670 /* camera.json in Resources */,
+-				1D73618C27F380F70032E670 /* nether_wart.json in Resources */,
+-				1D73618D27F380F70032E670 /* cooked_chicken.json in Resources */,
+-				1D7361AE27F380F80032E670 /* beetroot.json in Resources */,
+-				1D7361AC27F380F80032E670 /* pufferfish.json in Resources */,
+-				1D73619B27F380F80032E670 /* chicken.json in Resources */,
+-				1D73619627F380F70032E670 /* melon.json in Resources */,
+-				1D73619427F380F70032E670 /* cookie.json in Resources */,
+-				1D7361AD27F380F80032E670 /* bread.json in Resources */,
++				1DE4F86F27F5FD9100F28212 /* entities in Resources */,
+ 				1D73606D27F36B110032E670 /* Assets.xcassets in Resources */,
+-				1D73619827F380F70032E670 /* cooked_fish.json in Resources */,
+-				1D7361AB27F380F80032E670 /* potato.json in Resources */,
+-				1D73619C27F380F80032E670 /* pumpkin_seeds.json in Resources */,
+-				1D7361A427F380F80032E670 /* cooked_beef.json in Resources */,
+-				1D73619A27F380F80032E670 /* beetroot_soup.json in Resources */,
+-				1D73619E27F380F80032E670 /* fish.json in Resources */,
+-				1D7361B127F380F80032E670 /* carrot.json in Resources */,
+-				1D73618927F380F70032E670 /* porkchop.json in Resources */,
+-				1D7361A227F380F80032E670 /* clownfish.json in Resources */,
+-				1D7361B627F380F80032E670 /* rabbit_stew.json in Resources */,
+-				1D73619D27F380F80032E670 /* dried_kelp.json in Resources */,
+-				1D73618E27F380F70032E670 /* apple.json in Resources */,
+-				1D7361A927F380F80032E670 /* melon_seeds.json in Resources */,
+-				1D7361A727F380F80032E670 /* spider_eye.json in Resources */,
+-				1D73619527F380F70032E670 /* sweet_berries.json in Resources */,
+-				1D7361A527F380F80032E670 /* honeycomb.json in Resources */,
+-				1D73619327F380F70032E670 /* mushroom_stew.json in Resources */,
+-				1D7361B527F380F80032E670 /* rabbit.json in Resources */,
+-				1D7361A827F380F80032E670 /* cooked_rabbit.json in Resources */,
+-				1D7361A327F380F80032E670 /* chorus_fruit.json in Resources */,
+-				1D73618B27F380F70032E670 /* golden_carrot.json in Resources */,
+-				1D7361AA27F380F80032E670 /* muttonCooked.json in Resources */,
+-				1D73619927F380F80032E670 /* muttonRaw.json in Resources */,
+-				1D7361A027F380F80032E670 /* salmon.json in Resources */,
+-				1D7361B027F380F80032E670 /* suspicious_stew.json in Resources */,
++				1D73618927F380F70032E670 /* TestJson in Resources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+@@ -488,10 +305,12 @@
+ 			isa = PBXSourcesBuildPhase;
+ 			buildActionMask = 2147483647;
+ 			files = (
+-				1D73620B27F38FB30032E670 /* ItemDecoder.swift in Sources */,
+-				1D7360F627F36CAC0032E670 /* Item.swift in Sources */,
++				1DC1129E27F6068500B0E64B /* Entities.swift in Sources */,
++				1D73620B27F38FB30032E670 /* allDecoder.swift in Sources */,
++				1D7360F627F36CAC0032E670 /* behaviorDetails.swift in Sources */,
+ 				1D73623E27F395A60032E670 /* ItemViewer.swift in Sources */,
+ 				1D73624927F3CFE90032E670 /* getImage.swift in Sources */,
++				1DE4F86C27F5F1C400F28212 /* DataItem.swift in Sources */,
+ 				1D73606B27F36B0E0032E670 /* ContentView.swift in Sources */,
+ 				1D73606927F36B0E0032E670 /* My_App_No_Core_DataApp.swift in Sources */,
+ 				1DEA204327F3EB2400947EB9 /* ItemList.swift in Sources */,
+diff --git a/My App/My App.xcodeproj/project.pbxproj b/My App/My App.xcodeproj/project.pbxproj
+deleted file mode 100644
+index 2e5dbe7..0000000
+--- a/My App/My App.xcodeproj/project.pbxproj	
++++ /dev/null
+@@ -1,609 +0,0 @@
+-// !$*UTF8*$!
+-{
+-	archiveVersion = 1;
+-	classes = {
+-	};
+-	objectVersion = 55;
+-	objects = {
+-
+-/* Begin PBXBuildFile section */
+-		1D73602E27F36ADF0032E670 /* My_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73602D27F36ADF0032E670 /* My_AppApp.swift */; };
+-		1D73603027F36ADF0032E670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73602F27F36ADF0032E670 /* ContentView.swift */; };
+-		1D73603227F36AE60032E670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D73603127F36AE60032E670 /* Assets.xcassets */; };
+-		1D73603527F36AE60032E670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D73603427F36AE60032E670 /* Preview Assets.xcassets */; };
+-		1D73603727F36AE60032E670 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73603627F36AE60032E670 /* Persistence.swift */; };
+-		1D73603A27F36AE60032E670 /* My_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D73603827F36AE60032E670 /* My_App.xcdatamodeld */; };
+-		1D73604427F36AE70032E670 /* My_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73604327F36AE70032E670 /* My_AppTests.swift */; };
+-		1D73604E27F36AE70032E670 /* My_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73604D27F36AE70032E670 /* My_AppUITests.swift */; };
+-		1D73605027F36AE70032E670 /* My_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73604F27F36AE70032E670 /* My_AppUITestsLaunchTests.swift */; };
+-/* End PBXBuildFile section */
+-
+-/* Begin PBXContainerItemProxy section */
+-		1D73604027F36AE70032E670 /* PBXContainerItemProxy */ = {
+-			isa = PBXContainerItemProxy;
+-			containerPortal = 1D73602227F36ADF0032E670 /* Project object */;
+-			proxyType = 1;
+-			remoteGlobalIDString = 1D73602927F36ADF0032E670;
+-			remoteInfo = "My App";
+-		};
+-		1D73604A27F36AE70032E670 /* PBXContainerItemProxy */ = {
+-			isa = PBXContainerItemProxy;
+-			containerPortal = 1D73602227F36ADF0032E670 /* Project object */;
+-			proxyType = 1;
+-			remoteGlobalIDString = 1D73602927F36ADF0032E670;
+-			remoteInfo = "My App";
+-		};
+-/* End PBXContainerItemProxy section */
+-
+-/* Begin PBXFileReference section */
+-		1D73602A27F36ADF0032E670 /* My App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+-		1D73602D27F36ADF0032E670 /* My_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_AppApp.swift; sourceTree = "<group>"; };
+-		1D73602F27F36ADF0032E670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+-		1D73603127F36AE60032E670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+-		1D73603427F36AE60032E670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+-		1D73603627F36AE60032E670 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+-		1D73603927F36AE60032E670 /* My_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_App.xcdatamodel; sourceTree = "<group>"; };
+-		1D73603F27F36AE70032E670 /* My AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+-		1D73604327F36AE70032E670 /* My_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_AppTests.swift; sourceTree = "<group>"; };
+-		1D73604927F36AE70032E670 /* My AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+-		1D73604D27F36AE70032E670 /* My_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_AppUITests.swift; sourceTree = "<group>"; };
+-		1D73604F27F36AE70032E670 /* My_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+-/* End PBXFileReference section */
+-
+-/* Begin PBXFrameworksBuildPhase section */
+-		1D73602727F36ADF0032E670 /* Frameworks */ = {
+-			isa = PBXFrameworksBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-		1D73603C27F36AE70032E670 /* Frameworks */ = {
+-			isa = PBXFrameworksBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-		1D73604627F36AE70032E670 /* Frameworks */ = {
+-			isa = PBXFrameworksBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-/* End PBXFrameworksBuildPhase section */
+-
+-/* Begin PBXGroup section */
+-		1D73602127F36ADF0032E670 = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73602C27F36ADF0032E670 /* My App */,
+-				1D73604227F36AE70032E670 /* My AppTests */,
+-				1D73604C27F36AE70032E670 /* My AppUITests */,
+-				1D73602B27F36ADF0032E670 /* Products */,
+-			);
+-			sourceTree = "<group>";
+-		};
+-		1D73602B27F36ADF0032E670 /* Products */ = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73602A27F36ADF0032E670 /* My App.app */,
+-				1D73603F27F36AE70032E670 /* My AppTests.xctest */,
+-				1D73604927F36AE70032E670 /* My AppUITests.xctest */,
+-			);
+-			name = Products;
+-			sourceTree = "<group>";
+-		};
+-		1D73602C27F36ADF0032E670 /* My App */ = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73602D27F36ADF0032E670 /* My_AppApp.swift */,
+-				1D73602F27F36ADF0032E670 /* ContentView.swift */,
+-				1D73603127F36AE60032E670 /* Assets.xcassets */,
+-				1D73603627F36AE60032E670 /* Persistence.swift */,
+-				1D73603827F36AE60032E670 /* My_App.xcdatamodeld */,
+-				1D73603327F36AE60032E670 /* Preview Content */,
+-			);
+-			path = "My App";
+-			sourceTree = "<group>";
+-		};
+-		1D73603327F36AE60032E670 /* Preview Content */ = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73603427F36AE60032E670 /* Preview Assets.xcassets */,
+-			);
+-			path = "Preview Content";
+-			sourceTree = "<group>";
+-		};
+-		1D73604227F36AE70032E670 /* My AppTests */ = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73604327F36AE70032E670 /* My_AppTests.swift */,
+-			);
+-			path = "My AppTests";
+-			sourceTree = "<group>";
+-		};
+-		1D73604C27F36AE70032E670 /* My AppUITests */ = {
+-			isa = PBXGroup;
+-			children = (
+-				1D73604D27F36AE70032E670 /* My_AppUITests.swift */,
+-				1D73604F27F36AE70032E670 /* My_AppUITestsLaunchTests.swift */,
+-			);
+-			path = "My AppUITests";
+-			sourceTree = "<group>";
+-		};
+-/* End PBXGroup section */
+-
+-/* Begin PBXNativeTarget section */
+-		1D73602927F36ADF0032E670 /* My App */ = {
+-			isa = PBXNativeTarget;
+-			buildConfigurationList = 1D73605327F36AE70032E670 /* Build configuration list for PBXNativeTarget "My App" */;
+-			buildPhases = (
+-				1D73602627F36ADF0032E670 /* Sources */,
+-				1D73602727F36ADF0032E670 /* Frameworks */,
+-				1D73602827F36ADF0032E670 /* Resources */,
+-			);
+-			buildRules = (
+-			);
+-			dependencies = (
+-			);
+-			name = "My App";
+-			productName = "My App";
+-			productReference = 1D73602A27F36ADF0032E670 /* My App.app */;
+-			productType = "com.apple.product-type.application";
+-		};
+-		1D73603E27F36AE70032E670 /* My AppTests */ = {
+-			isa = PBXNativeTarget;
+-			buildConfigurationList = 1D73605627F36AE70032E670 /* Build configuration list for PBXNativeTarget "My AppTests" */;
+-			buildPhases = (
+-				1D73603B27F36AE70032E670 /* Sources */,
+-				1D73603C27F36AE70032E670 /* Frameworks */,
+-				1D73603D27F36AE70032E670 /* Resources */,
+-			);
+-			buildRules = (
+-			);
+-			dependencies = (
+-				1D73604127F36AE70032E670 /* PBXTargetDependency */,
+-			);
+-			name = "My AppTests";
+-			productName = "My AppTests";
+-			productReference = 1D73603F27F36AE70032E670 /* My AppTests.xctest */;
+-			productType = "com.apple.product-type.bundle.unit-test";
+-		};
+-		1D73604827F36AE70032E670 /* My AppUITests */ = {
+-			isa = PBXNativeTarget;
+-			buildConfigurationList = 1D73605927F36AE70032E670 /* Build configuration list for PBXNativeTarget "My AppUITests" */;
+-			buildPhases = (
+-				1D73604527F36AE70032E670 /* Sources */,
+-				1D73604627F36AE70032E670 /* Frameworks */,
+-				1D73604727F36AE70032E670 /* Resources */,
+-			);
+-			buildRules = (
+-			);
+-			dependencies = (
+-				1D73604B27F36AE70032E670 /* PBXTargetDependency */,
+-			);
+-			name = "My AppUITests";
+-			productName = "My AppUITests";
+-			productReference = 1D73604927F36AE70032E670 /* My AppUITests.xctest */;
+-			productType = "com.apple.product-type.bundle.ui-testing";
+-		};
+-/* End PBXNativeTarget section */
+-
+-/* Begin PBXProject section */
+-		1D73602227F36ADF0032E670 /* Project object */ = {
+-			isa = PBXProject;
+-			attributes = {
+-				BuildIndependentTargetsInParallel = 1;
+-				LastSwiftUpdateCheck = 1330;
+-				LastUpgradeCheck = 1330;
+-				TargetAttributes = {
+-					1D73602927F36ADF0032E670 = {
+-						CreatedOnToolsVersion = 13.3;
+-					};
+-					1D73603E27F36AE70032E670 = {
+-						CreatedOnToolsVersion = 13.3;
+-						TestTargetID = 1D73602927F36ADF0032E670;
+-					};
+-					1D73604827F36AE70032E670 = {
+-						CreatedOnToolsVersion = 13.3;
+-						TestTargetID = 1D73602927F36ADF0032E670;
+-					};
+-				};
+-			};
+-			buildConfigurationList = 1D73602527F36ADF0032E670 /* Build configuration list for PBXProject "My App" */;
+-			compatibilityVersion = "Xcode 13.0";
+-			developmentRegion = en;
+-			hasScannedForEncodings = 0;
+-			knownRegions = (
+-				en,
+-				Base,
+-			);
+-			mainGroup = 1D73602127F36ADF0032E670;
+-			productRefGroup = 1D73602B27F36ADF0032E670 /* Products */;
+-			projectDirPath = "";
+-			projectRoot = "";
+-			targets = (
+-				1D73602927F36ADF0032E670 /* My App */,
+-				1D73603E27F36AE70032E670 /* My AppTests */,
+-				1D73604827F36AE70032E670 /* My AppUITests */,
+-			);
+-		};
+-/* End PBXProject section */
+-
+-/* Begin PBXResourcesBuildPhase section */
+-		1D73602827F36ADF0032E670 /* Resources */ = {
+-			isa = PBXResourcesBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-				1D73603527F36AE60032E670 /* Preview Assets.xcassets in Resources */,
+-				1D73603227F36AE60032E670 /* Assets.xcassets in Resources */,
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-		1D73603D27F36AE70032E670 /* Resources */ = {
+-			isa = PBXResourcesBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-		1D73604727F36AE70032E670 /* Resources */ = {
+-			isa = PBXResourcesBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-/* End PBXResourcesBuildPhase section */
+-
+-/* Begin PBXSourcesBuildPhase section */
+-		1D73602627F36ADF0032E670 /* Sources */ = {
+-			isa = PBXSourcesBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-				1D73603727F36AE60032E670 /* Persistence.swift in Sources */,
+-				1D73603A27F36AE60032E670 /* My_App.xcdatamodeld in Sources */,
+-				1D73603027F36ADF0032E670 /* ContentView.swift in Sources */,
+-				1D73602E27F36ADF0032E670 /* My_AppApp.swift in Sources */,
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-		1D73603B27F36AE70032E670 /* Sources */ = {
+-			isa = PBXSourcesBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-				1D73604427F36AE70032E670 /* My_AppTests.swift in Sources */,
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-		1D73604527F36AE70032E670 /* Sources */ = {
+-			isa = PBXSourcesBuildPhase;
+-			buildActionMask = 2147483647;
+-			files = (
+-				1D73605027F36AE70032E670 /* My_AppUITestsLaunchTests.swift in Sources */,
+-				1D73604E27F36AE70032E670 /* My_AppUITests.swift in Sources */,
+-			);
+-			runOnlyForDeploymentPostprocessing = 0;
+-		};
+-/* End PBXSourcesBuildPhase section */
+-
+-/* Begin PBXTargetDependency section */
+-		1D73604127F36AE70032E670 /* PBXTargetDependency */ = {
+-			isa = PBXTargetDependency;
+-			target = 1D73602927F36ADF0032E670 /* My App */;
+-			targetProxy = 1D73604027F36AE70032E670 /* PBXContainerItemProxy */;
+-		};
+-		1D73604B27F36AE70032E670 /* PBXTargetDependency */ = {
+-			isa = PBXTargetDependency;
+-			target = 1D73602927F36ADF0032E670 /* My App */;
+-			targetProxy = 1D73604A27F36AE70032E670 /* PBXContainerItemProxy */;
+-		};
+-/* End PBXTargetDependency section */
+-
+-/* Begin XCBuildConfiguration section */
+-		1D73605127F36AE70032E670 /* Debug */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ALWAYS_SEARCH_USER_PATHS = NO;
+-				CLANG_ANALYZER_NONNULL = YES;
+-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+-				CLANG_ENABLE_MODULES = YES;
+-				CLANG_ENABLE_OBJC_ARC = YES;
+-				CLANG_ENABLE_OBJC_WEAK = YES;
+-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+-				CLANG_WARN_BOOL_CONVERSION = YES;
+-				CLANG_WARN_COMMA = YES;
+-				CLANG_WARN_CONSTANT_CONVERSION = YES;
+-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+-				CLANG_WARN_EMPTY_BODY = YES;
+-				CLANG_WARN_ENUM_CONVERSION = YES;
+-				CLANG_WARN_INFINITE_RECURSION = YES;
+-				CLANG_WARN_INT_CONVERSION = YES;
+-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+-				CLANG_WARN_UNREACHABLE_CODE = YES;
+-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+-				COPY_PHASE_STRIP = NO;
+-				DEBUG_INFORMATION_FORMAT = dwarf;
+-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+-				ENABLE_TESTABILITY = YES;
+-				GCC_C_LANGUAGE_STANDARD = gnu11;
+-				GCC_DYNAMIC_NO_PIC = NO;
+-				GCC_NO_COMMON_BLOCKS = YES;
+-				GCC_OPTIMIZATION_LEVEL = 0;
+-				GCC_PREPROCESSOR_DEFINITIONS = (
+-					"DEBUG=1",
+-					"$(inherited)",
+-				);
+-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+-				GCC_WARN_UNDECLARED_SELECTOR = YES;
+-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+-				GCC_WARN_UNUSED_FUNCTION = YES;
+-				GCC_WARN_UNUSED_VARIABLE = YES;
+-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+-				MTL_FAST_MATH = YES;
+-				ONLY_ACTIVE_ARCH = YES;
+-				SDKROOT = iphoneos;
+-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+-			};
+-			name = Debug;
+-		};
+-		1D73605227F36AE70032E670 /* Release */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ALWAYS_SEARCH_USER_PATHS = NO;
+-				CLANG_ANALYZER_NONNULL = YES;
+-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+-				CLANG_ENABLE_MODULES = YES;
+-				CLANG_ENABLE_OBJC_ARC = YES;
+-				CLANG_ENABLE_OBJC_WEAK = YES;
+-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+-				CLANG_WARN_BOOL_CONVERSION = YES;
+-				CLANG_WARN_COMMA = YES;
+-				CLANG_WARN_CONSTANT_CONVERSION = YES;
+-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+-				CLANG_WARN_EMPTY_BODY = YES;
+-				CLANG_WARN_ENUM_CONVERSION = YES;
+-				CLANG_WARN_INFINITE_RECURSION = YES;
+-				CLANG_WARN_INT_CONVERSION = YES;
+-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+-				CLANG_WARN_UNREACHABLE_CODE = YES;
+-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+-				COPY_PHASE_STRIP = NO;
+-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+-				ENABLE_NS_ASSERTIONS = NO;
+-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+-				GCC_C_LANGUAGE_STANDARD = gnu11;
+-				GCC_NO_COMMON_BLOCKS = YES;
+-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+-				GCC_WARN_UNDECLARED_SELECTOR = YES;
+-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+-				GCC_WARN_UNUSED_FUNCTION = YES;
+-				GCC_WARN_UNUSED_VARIABLE = YES;
+-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+-				MTL_ENABLE_DEBUG_INFO = NO;
+-				MTL_FAST_MATH = YES;
+-				SDKROOT = iphoneos;
+-				SWIFT_COMPILATION_MODE = wholemodule;
+-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+-				VALIDATE_PRODUCT = YES;
+-			};
+-			name = Release;
+-		};
+-		1D73605427F36AE70032E670 /* Debug */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+-				CODE_SIGN_STYLE = Automatic;
+-				CURRENT_PROJECT_VERSION = 1;
+-				DEVELOPMENT_ASSET_PATHS = "\"My App/Preview Content\"";
+-				DEVELOPMENT_TEAM = YQZJF26P66;
+-				ENABLE_PREVIEWS = YES;
+-				GENERATE_INFOPLIST_FILE = YES;
+-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+-				LD_RUNPATH_SEARCH_PATHS = (
+-					"$(inherited)",
+-					"@executable_path/Frameworks",
+-				);
+-				MARKETING_VERSION = 1.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = "CS2420.My-App";
+-				PRODUCT_NAME = "$(TARGET_NAME)";
+-				SWIFT_EMIT_LOC_STRINGS = YES;
+-				SWIFT_VERSION = 5.0;
+-				TARGETED_DEVICE_FAMILY = "1,2";
+-			};
+-			name = Debug;
+-		};
+-		1D73605527F36AE70032E670 /* Release */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+-				CODE_SIGN_STYLE = Automatic;
+-				CURRENT_PROJECT_VERSION = 1;
+-				DEVELOPMENT_ASSET_PATHS = "\"My App/Preview Content\"";
+-				DEVELOPMENT_TEAM = YQZJF26P66;
+-				ENABLE_PREVIEWS = YES;
+-				GENERATE_INFOPLIST_FILE = YES;
+-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+-				LD_RUNPATH_SEARCH_PATHS = (
+-					"$(inherited)",
+-					"@executable_path/Frameworks",
+-				);
+-				MARKETING_VERSION = 1.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = "CS2420.My-App";
+-				PRODUCT_NAME = "$(TARGET_NAME)";
+-				SWIFT_EMIT_LOC_STRINGS = YES;
+-				SWIFT_VERSION = 5.0;
+-				TARGETED_DEVICE_FAMILY = "1,2";
+-			};
+-			name = Release;
+-		};
+-		1D73605727F36AE70032E670 /* Debug */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+-				BUNDLE_LOADER = "$(TEST_HOST)";
+-				CODE_SIGN_STYLE = Automatic;
+-				CURRENT_PROJECT_VERSION = 1;
+-				DEVELOPMENT_TEAM = YQZJF26P66;
+-				GENERATE_INFOPLIST_FILE = YES;
+-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+-				MARKETING_VERSION = 1.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = "CS2420.My-AppTests";
+-				PRODUCT_NAME = "$(TARGET_NAME)";
+-				SWIFT_EMIT_LOC_STRINGS = NO;
+-				SWIFT_VERSION = 5.0;
+-				TARGETED_DEVICE_FAMILY = "1,2";
+-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My App.app/My App";
+-			};
+-			name = Debug;
+-		};
+-		1D73605827F36AE70032E670 /* Release */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+-				BUNDLE_LOADER = "$(TEST_HOST)";
+-				CODE_SIGN_STYLE = Automatic;
+-				CURRENT_PROJECT_VERSION = 1;
+-				DEVELOPMENT_TEAM = YQZJF26P66;
+-				GENERATE_INFOPLIST_FILE = YES;
+-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+-				MARKETING_VERSION = 1.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = "CS2420.My-AppTests";
+-				PRODUCT_NAME = "$(TARGET_NAME)";
+-				SWIFT_EMIT_LOC_STRINGS = NO;
+-				SWIFT_VERSION = 5.0;
+-				TARGETED_DEVICE_FAMILY = "1,2";
+-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My App.app/My App";
+-			};
+-			name = Release;
+-		};
+-		1D73605A27F36AE70032E670 /* Debug */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+-				CODE_SIGN_STYLE = Automatic;
+-				CURRENT_PROJECT_VERSION = 1;
+-				DEVELOPMENT_TEAM = YQZJF26P66;
+-				GENERATE_INFOPLIST_FILE = YES;
+-				MARKETING_VERSION = 1.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = "CS2420.My-AppUITests";
+-				PRODUCT_NAME = "$(TARGET_NAME)";
+-				SWIFT_EMIT_LOC_STRINGS = NO;
+-				SWIFT_VERSION = 5.0;
+-				TARGETED_DEVICE_FAMILY = "1,2";
+-				TEST_TARGET_NAME = "My App";
+-			};
+-			name = Debug;
+-		};
+-		1D73605B27F36AE70032E670 /* Release */ = {
+-			isa = XCBuildConfiguration;
+-			buildSettings = {
+-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+-				CODE_SIGN_STYLE = Automatic;
+-				CURRENT_PROJECT_VERSION = 1;
+-				DEVELOPMENT_TEAM = YQZJF26P66;
+-				GENERATE_INFOPLIST_FILE = YES;
+-				MARKETING_VERSION = 1.0;
+-				PRODUCT_BUNDLE_IDENTIFIER = "CS2420.My-AppUITests";
+-				PRODUCT_NAME = "$(TARGET_NAME)";
+-				SWIFT_EMIT_LOC_STRINGS = NO;
+-				SWIFT_VERSION = 5.0;
+-				TARGETED_DEVICE_FAMILY = "1,2";
+-				TEST_TARGET_NAME = "My App";
+-			};
+-			name = Release;
+-		};
+-/* End XCBuildConfiguration section */
+-
+-/* Begin XCConfigurationList section */
+-		1D73602527F36ADF0032E670 /* Build configuration list for PBXProject "My App" */ = {
+-			isa = XCConfigurationList;
+-			buildConfigurations = (
+-				1D73605127F36AE70032E670 /* Debug */,
+-				1D73605227F36AE70032E670 /* Release */,
+-			);
+-			defaultConfigurationIsVisible = 0;
+-			defaultConfigurationName = Release;
+-		};
+-		1D73605327F36AE70032E670 /* Build configuration list for PBXNativeTarget "My App" */ = {
+-			isa = XCConfigurationList;
+-			buildConfigurations = (
+-				1D73605427F36AE70032E670 /* Debug */,
+-				1D73605527F36AE70032E670 /* Release */,
+-			);
+-			defaultConfigurationIsVisible = 0;
+-			defaultConfigurationName = Release;
+-		};
+-		1D73605627F36AE70032E670 /* Build configuration list for PBXNativeTarget "My AppTests" */ = {
+-			isa = XCConfigurationList;
+-			buildConfigurations = (
+-				1D73605727F36AE70032E670 /* Debug */,
+-				1D73605827F36AE70032E670 /* Release */,
+-			);
+-			defaultConfigurationIsVisible = 0;
+-			defaultConfigurationName = Release;
+-		};
+-		1D73605927F36AE70032E670 /* Build configuration list for PBXNativeTarget "My AppUITests" */ = {
+-			isa = XCConfigurationList;
+-			buildConfigurations = (
+-				1D73605A27F36AE70032E670 /* Debug */,
+-				1D73605B27F36AE70032E670 /* Release */,
+-			);
+-			defaultConfigurationIsVisible = 0;
+-			defaultConfigurationName = Release;
+-		};
+-/* End XCConfigurationList section */
+-
+-/* Begin XCVersionGroup section */
+-		1D73603827F36AE60032E670 /* My_App.xcdatamodeld */ = {
+-			isa = XCVersionGroup;
+-			children = (
+-				1D73603927F36AE60032E670 /* My_App.xcdatamodel */,
+-			);
+-			currentVersion = 1D73603927F36AE60032E670 /* My_App.xcdatamodel */;
+-			path = My_App.xcdatamodeld;
+-			sourceTree = "<group>";
+-			versionGroupType = wrapper.xcdatamodel;
+-		};
+-/* End XCVersionGroup section */
+-	};
+-	rootObject = 1D73602227F36ADF0032E670 /* Project object */;
+-}
+diff --git a/My App/My App.xcodeproj/project.xcworkspace/contents.xcworkspacedata b/My App/My App.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+deleted file mode 100644
+index 919434a..0000000
+--- a/My App/My App.xcodeproj/project.xcworkspace/contents.xcworkspacedata	
++++ /dev/null
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<Workspace
+-   version = "1.0">
+-   <FileRef
+-      location = "self:">
+-   </FileRef>
+-</Workspace>
+diff --git a/My App/My App/Assets.xcassets/AccentColor.colorset/Contents.json b/My App/My App/Assets.xcassets/AccentColor.colorset/Contents.json
+deleted file mode 100644
+index eb87897..0000000
+--- a/My App/My App/Assets.xcassets/AccentColor.colorset/Contents.json	
++++ /dev/null
+@@ -1,11 +0,0 @@
+-{
+-  "colors" : [
+-    {
+-      "idiom" : "universal"
+-    }
+-  ],
+-  "info" : {
+-    "author" : "xcode",
+-    "version" : 1
+-  }
+-}
+diff --git a/My App/My App/Assets.xcassets/AppIcon.appiconset/Contents.json b/My App/My App/Assets.xcassets/AppIcon.appiconset/Contents.json
+deleted file mode 100644
+index 5a3257a..0000000
+--- a/My App/My App/Assets.xcassets/AppIcon.appiconset/Contents.json	
++++ /dev/null
+@@ -1,93 +0,0 @@
+-{
+-  "images" : [
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "2x",
+-      "size" : "20x20"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "3x",
+-      "size" : "20x20"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "2x",
+-      "size" : "29x29"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "3x",
+-      "size" : "29x29"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "2x",
+-      "size" : "40x40"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "3x",
+-      "size" : "40x40"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "2x",
+-      "size" : "60x60"
+-    },
+-    {
+-      "idiom" : "iphone",
+-      "scale" : "3x",
+-      "size" : "60x60"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "1x",
+-      "size" : "20x20"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "2x",
+-      "size" : "20x20"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "1x",
+-      "size" : "29x29"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "2x",
+-      "size" : "29x29"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "1x",
+-      "size" : "40x40"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "2x",
+-      "size" : "40x40"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "2x",
+-      "size" : "76x76"
+-    },
+-    {
+-      "idiom" : "ipad",
+-      "scale" : "2x",
+-      "size" : "83.5x83.5"
+-    },
+-    {
+-      "idiom" : "ios-marketing",
+-      "scale" : "1x",
+-      "size" : "1024x1024"
+-    }
+-  ],
+-  "info" : {
+-    "author" : "xcode",
+-    "version" : 1
+-  }
+-}
+diff --git a/My App/My App/Assets.xcassets/Contents.json b/My App/My App/Assets.xcassets/Contents.json
+deleted file mode 100644
+index 73c0059..0000000
+--- a/My App/My App/Assets.xcassets/Contents.json	
++++ /dev/null
+@@ -1,6 +0,0 @@
+-{
+-  "info" : {
+-    "author" : "xcode",
+-    "version" : 1
+-  }
+-}
+diff --git a/My App/My App/ContentView.swift b/My App/My App/ContentView.swift
+deleted file mode 100644
+index 7ce1da2..0000000
+--- a/My App/My App/ContentView.swift	
++++ /dev/null
+@@ -1,88 +0,0 @@
+-//
+-//  ContentView.swift
+-//  My App
+-//
+-//  Created by Coleton Watt on 3/29/22.
+-//
+-
+-import SwiftUI
+-import CoreData
+-
+-struct ContentView: View {
+-    @Environment(\.managedObjectContext) private var viewContext
+-
+-    @FetchRequest(
+-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+-        animation: .default)
+-    private var items: FetchedResults<Item>
+-
+-    var body: some View {
+-        NavigationView {
+-            List {
+-                ForEach(items) { item in
+-                    NavigationLink {
+-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+-                    } label: {
+-                        Text(item.timestamp!, formatter: itemFormatter)
+-                    }
+-                }
+-                .onDelete(perform: deleteItems)
+-            }
+-            .toolbar {
+-                ToolbarItem(placement: .navigationBarTrailing) {
+-                    EditButton()
+-                }
+-                ToolbarItem {
+-                    Button(action: addItem) {
+-                        Label("Add Item", systemImage: "plus")
+-                    }
+-                }
+-            }
+-            Text("Select an item")
+-        }
+-    }
+-
+-    private func addItem() {
+-        withAnimation {
+-            let newItem = Item(context: viewContext)
+-            newItem.timestamp = Date()
+-
+-            do {
+-                try viewContext.save()
+-            } catch {
+-                // Replace this implementation with code to handle the error appropriately.
+-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+-                let nsError = error as NSError
+-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+-            }
+-        }
+-    }
+-
+-    private func deleteItems(offsets: IndexSet) {
+-        withAnimation {
+-            offsets.map { items[$0] }.forEach(viewContext.delete)
+-
+-            do {
+-                try viewContext.save()
+-            } catch {
+-                // Replace this implementation with code to handle the error appropriately.
+-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+-                let nsError = error as NSError
+-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+-            }
+-        }
+-    }
+-}
+-
+-private let itemFormatter: DateFormatter = {
+-    let formatter = DateFormatter()
+-    formatter.dateStyle = .short
+-    formatter.timeStyle = .medium
+-    return formatter
+-}()
+-
+-struct ContentView_Previews: PreviewProvider {
+-    static var previews: some View {
+-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+-    }
+-}
+diff --git a/My App/My App/My_App.xcdatamodeld/.xccurrentversion b/My App/My App/My_App.xcdatamodeld/.xccurrentversion
+deleted file mode 100644
+index ce1d917..0000000
+--- a/My App/My App/My_App.xcdatamodeld/.xccurrentversion	
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>_XCCurrentVersionName</key>
+-	<string>My_App.xcdatamodel</string>
+-</dict>
+-</plist>
+diff --git a/My App/My App/My_App.xcdatamodeld/My_App.xcdatamodel/contents b/My App/My App/My_App.xcdatamodeld/My_App.xcdatamodel/contents
+deleted file mode 100644
+index e8d6ec8..0000000
+--- a/My App/My App/My_App.xcdatamodeld/My_App.xcdatamodel/contents	
++++ /dev/null
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
+-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+-    </entity>
+-    <elements>
+-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+-    </elements>
+-</model>
+\ No newline at end of file
+diff --git a/My App/My App/My_AppApp.swift b/My App/My App/My_AppApp.swift
+deleted file mode 100644
+index 325d4d1..0000000
+--- a/My App/My App/My_AppApp.swift	
++++ /dev/null
+@@ -1,20 +0,0 @@
+-//
+-//  My_AppApp.swift
+-//  My App
+-//
+-//  Created by Coleton Watt on 3/29/22.
+-//
+-
+-import SwiftUI
+-
+-@main
+-struct My_AppApp: App {
+-    let persistenceController = PersistenceController.shared
+-
+-    var body: some Scene {
+-        WindowGroup {
+-            ContentView()
+-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+-        }
+-    }
+-}
+diff --git a/My App/My App/Persistence.swift b/My App/My App/Persistence.swift
+deleted file mode 100644
+index d849bf7..0000000
+--- a/My App/My App/Persistence.swift	
++++ /dev/null
+@@ -1,56 +0,0 @@
+-//
+-//  Persistence.swift
+-//  My App
+-//
+-//  Created by Coleton Watt on 3/29/22.
+-//
+-
+-import CoreData
+-
+-struct PersistenceController {
+-    static let shared = PersistenceController()
+-
+-    static var preview: PersistenceController = {
+-        let result = PersistenceController(inMemory: true)
+-        let viewContext = result.container.viewContext
+-        for _ in 0..<10 {
+-            let newItem = Item(context: viewContext)
+-            newItem.timestamp = Date()
+-        }
+-        do {
+-            try viewContext.save()
+-        } catch {
+-            // Replace this implementation with code to handle the error appropriately.
+-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+-            let nsError = error as NSError
+-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+-        }
+-        return result
+-    }()
+-
+-    let container: NSPersistentCloudKitContainer
+-
+-    init(inMemory: Bool = false) {
+-        container = NSPersistentCloudKitContainer(name: "My_App")
+-        if inMemory {
+-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+-        }
+-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+-            if let error = error as NSError? {
+-                // Replace this implementation with code to handle the error appropriately.
+-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+-
+-                /*
+-                 Typical reasons for an error here include:
+-                 * The parent directory does not exist, cannot be created, or disallows writing.
+-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+-                 * The device is out of space.
+-                 * The store could not be migrated to the current model version.
+-                 Check the error message to determine what the actual problem was.
+-                 */
+-                fatalError("Unresolved error \(error), \(error.userInfo)")
+-            }
+-        })
+-        container.viewContext.automaticallyMergesChangesFromParent = true
+-    }
+-}
+diff --git a/My App/My App/Preview Content/Preview Assets.xcassets/Contents.json b/My App/My App/Preview Content/Preview Assets.xcassets/Contents.json
+deleted file mode 100644
+index 73c0059..0000000
+--- a/My App/My App/Preview Content/Preview Assets.xcassets/Contents.json	
++++ /dev/null
+@@ -1,6 +0,0 @@
+-{
+-  "info" : {
+-    "author" : "xcode",
+-    "version" : 1
+-  }
+-}
+diff --git a/My App/My AppTests/My_AppTests.swift b/My App/My AppTests/My_AppTests.swift
+deleted file mode 100644
+index 962f73d..0000000
+--- a/My App/My AppTests/My_AppTests.swift	
++++ /dev/null
+@@ -1,36 +0,0 @@
+-//
+-//  My_AppTests.swift
+-//  My AppTests
+-//
+-//  Created by Coleton Watt on 3/29/22.
+-//
+-
+-import XCTest
+-@testable import My_App
+-
+-class My_AppTests: XCTestCase {
+-
+-    override func setUpWithError() throws {
+-        // Put setup code here. This method is called before the invocation of each test method in the class.
+-    }
+-
+-    override func tearDownWithError() throws {
+-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+-    }
+-
+-    func testExample() throws {
+-        // This is an example of a functional test case.
+-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+-        // Any test you write for XCTest can be annotated as throws and async.
+-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
+-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+-    }
+-
+-    func testPerformanceExample() throws {
+-        // This is an example of a performance test case.
+-        self.measure {
+-            // Put the code you want to measure the time of here.
+-        }
+-    }
+-
+-}
+diff --git a/My App/My AppUITests/My_AppUITests.swift b/My App/My AppUITests/My_AppUITests.swift
+deleted file mode 100644
+index c0a8c27..0000000
+--- a/My App/My AppUITests/My_AppUITests.swift	
++++ /dev/null
+@@ -1,41 +0,0 @@
+-//
+-//  My_AppUITests.swift
+-//  My AppUITests
+-//
+-//  Created by Coleton Watt on 3/29/22.
+-//
+-
+-import XCTest
+-
+-class My_AppUITests: XCTestCase {
+-
+-    override func setUpWithError() throws {
+-        // Put setup code here. This method is called before the invocation of each test method in the class.
+-
+-        // In UI tests it is usually best to stop immediately when a failure occurs.
+-        continueAfterFailure = false
+-
+-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+-    }
+-
+-    override func tearDownWithError() throws {
+-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+-    }
+-
+-    func testExample() throws {
+-        // UI tests must launch the application that they test.
+-        let app = XCUIApplication()
+-        app.launch()
+-
+-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+-    }
+-
+-    func testLaunchPerformance() throws {
+-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+-            // This measures how long it takes to launch your application.
+-            measure(metrics: [XCTApplicationLaunchMetric()]) {
+-                XCUIApplication().launch()
+-            }
+-        }
+-    }
+-}
+diff --git a/My App/My AppUITests/My_AppUITestsLaunchTests.swift b/My App/My AppUITests/My_AppUITestsLaunchTests.swift
+deleted file mode 100644
+index 2d1df60..0000000
+--- a/My App/My AppUITests/My_AppUITestsLaunchTests.swift	
++++ /dev/null
+@@ -1,32 +0,0 @@
+-//
+-//  My_AppUITestsLaunchTests.swift
+-//  My AppUITests
+-//
+-//  Created by Coleton Watt on 3/29/22.
+-//
+-
+-import XCTest
+-
+-class My_AppUITestsLaunchTests: XCTestCase {
+-
+-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
+-        true
+-    }
+-
+-    override func setUpWithError() throws {
+-        continueAfterFailure = false
+-    }
+-
+-    func testLaunch() throws {
+-        let app = XCUIApplication()
+-        app.launch()
+-
+-        // Insert steps here to perform after app launch but before taking a screenshot,
+-        // such as logging into a test account or navigating somewhere in the app
+-
+-        let attachment = XCTAttachment(screenshot: app.screenshot())
+-        attachment.name = "Launch Screen"
+-        attachment.lifetime = .keepAlways
+-        add(attachment)
+-    }
+-}
+diff --git a/sad/sad/main.swift b/sad/sad/main.swift
+new file mode 100644
+index 0000000..8dc5846
+--- /dev/null
++++ b/sad/sad/main.swift
+@@ -0,0 +1,96 @@
++//
++//  main.swift
++//  sad
++//
++//  Created by Coleton Watt on 3/29/22.
++//
++
++import Foundation
++
++
++
++
++import Foundation
++import SwiftUI
++
++print("hellow}")
++
++
++struct Item: Hashable, Codable, Identifiable{
++    var id: String;
++    var name: String
++    
++    private var components: Components;
++  
++    
++    struct Components: Hashable, Codable{
++        var use_duration : Int;
++        var food: Food;
++    }
++    struct Food: Hashable, Codable{
++        var nutrition: Int
++        var saturationModifier: SaturationModifier;
++        
++    }
++    enum SaturationModifier: String, CaseIterable, Codable{
++        case low = "low"
++        case normal = "normal"
++        case poor = "poor"
++    }
++
++}
++
++
++//var itemDecode: [Item] = load("items")
++
++class itemDecoder: ObservableObject{
++    var itemDecoded : [Item] = load2()
++    
++
++    
++}
++
++
++func load2() -> [Item]{
++    var data: [Item] = []
++    var items: [String];
++    var fileSent: String = "/Users/coletonwatt/Documents/School/School 12th/Capstone Project/testFile.playground/Resources/items/items/"
++    do{
++        items = try FileManager.default.contentsOfDirectory(atPath: "/Users/coletonwatt/Documents/School/School 12th/Capstone Project/testFile.playground/Resources/items/items")
++    
++        for file in items{
++            
++                 data.append(load("nether_wart.json"));
++        }
++    } catch{
++        fatalError("Cannot find items!!!!!!")
++    }
++    return data;
++}
++
++
++
++func load<T: Decodable>(_ filename: String) -> T {
++    let data: Data
++
++    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
++    else {
++        fatalError("Couldn't find \(filename) in main bundle.")
++    }
++
++    do {
++        data = try Data(contentsOf: file)
++    } catch {
++        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
++    }
++
++    do {
++        let decoder = JSONDecoder()
++        return try decoder.decode(T.self, from: data)
++    } catch {
++        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
++    }
++}
++
++
++let something = itemDecoder()
